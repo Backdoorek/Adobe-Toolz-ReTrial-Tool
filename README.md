@@ -1,6 +1,7 @@
 # Adobe-Toolz-ReTrial-Tool
 
-[Donwload latest release](https://github.com/Backdoorek/Adobe-Toolz-ReTrial-Tool/releases)
+[Download latest release](https://github.com/Backdoorek/Adobe-Toolz-ReTrial-Tool/releases)
+
 [Wiki](https://github.com/Backdoorek/Adobe-Toolz-ReTrial-Tool/wiki)
 
 Basic Usage
