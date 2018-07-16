@@ -1,0 +1,17 @@
+{
+ "Programs' paths": {
+  "Photoshop": "C:\\Program Files\\Adobe\\Adobe Photoshop CC 2018\\AMT\\application.xml",
+  "Premiere": "C:\\Program Files\\Adobe\\Adobe Premiere Pro CC 2018\\AMT\\application.xml",
+  "InDesign": "C:\\Program Files\\Adobe\\Adobe InDesign CC 2018\\AMT\\application.xml"
+ },
+ "Enabled": [
+  "Photoshop",
+  "Premiere",
+  "InDesign"
+ ],
+ "Default keys": {
+  "Photoshop": "911987057659283838047468",
+  "Premiere": "976087079113928897525201",
+  "InDesign": "916587039040863386426082"
+ }
+}
