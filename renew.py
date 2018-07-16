@@ -80,6 +80,41 @@ class RenewTool:
         for program in self.__config['Default keys']:
             self.restore(program)
 
+    def enable(self, program):
+        if not program in self.__config["Programs' paths"]:
+            click.echo('Program {} not recognized!!!'.format(program))
+            return
+        if program in self.__config['Enabled']:
+            click.echo('{} exists on "Enabled" list! Skipping...'.format(program))
+        else:
+            click.echo('Enabling {}...'.format(program))
+            self.__config['Enabled'].append(program)
+
+            open(self.__configpath, encoding='utf-8', mode='w').write(json.dumps(self.__config, indent=2))
+            click.echo('Enabled!')
+
+            self.reload_config()
+            click.echo('Config reloaded')
+
+    def disable(self, program):
+        if not program in self.__config['Enabled']:
+            click.echo('Program {} is not enabled!!!'.format(program))
+        else:
+            click.echo('Disabling {}...'.format(program))
+            del self.__config['Enabled'][program]
+
+            open(self.__configpath, encoding='utf-8', mode='w').write(json.dumps(self.__config, indent=2))
+            click.echo('Disabled!')
+
+            self.reload_config()
+            click.echo('Config reloaded')
+
+    def enabled(self):
+        click.echo('Showing {} products'.format(self.__config['Enabled'].__len__()))
+        for program in self.__config['Enabled']:
+            click.echo(program)
+
+
 if __name__ == '__main__':
     k = RenewTool('config.json')
     k.renew('Photoshop')
