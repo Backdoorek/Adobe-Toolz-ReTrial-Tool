@@ -1,5 +1,7 @@
 # Adobe-Toolz-ReTrial-Tool
 
+## THIS METHOD DON'T WORK ON CC 2019 use on 2018 or older [all 2018 CC](https://prodesigntools.com/adobe-cc-2018-direct-download-links.html)
+
 [Download latest release](https://github.com/Backdoorek/Adobe-Toolz-ReTrial-Tool/releases/latest)
 
 [Wiki](https://github.com/Backdoorek/Adobe-Toolz-ReTrial-Tool/wiki)
